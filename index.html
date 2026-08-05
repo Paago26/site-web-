@@ -17,8 +17,8 @@
     --gold-light: #EBDBB8;
     --gold-dim: #7A6642;
     --line: rgba(201,168,118,0.20);
-    --text-dim: rgba(250,249,246,0.62);
-    --text-dimmer: rgba(250,249,246,0.4);
+    --text-dim: rgba(250,249,246,0.66);
+    --text-dimmer: rgba(250,249,246,0.58);
     --ease: cubic-bezier(.22,1,.36,1);
     --ease-soft: cubic-bezier(.16,.84,.44,1);
   }
@@ -337,14 +337,14 @@
   .proj-card::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg, rgba(10,10,10,0.85) 0%, transparent 55%);}
   .proj-cap{position:absolute;left:22px;bottom:22px;z-index:2;}
   .proj-cap .eyebrow{font-size:9px;display:block;margin-bottom:6px;}
-  .proj-cap h4{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--white);font-weight:500;}
+  .proj-cap h3{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--white);font-weight:500;}
 
   /* ============ FAQ ============ */
   .faq{background:var(--black);}
   .faq-list{max-width:760px;}
   .faq-item{border-bottom:1px solid var(--line);}
   .faq-q{display:flex;align-items:center;justify-content:space-between;padding:28px 4px;cursor:none;gap:20px;}
-  .faq-q h4{font-size:19px;font-weight:500;color:var(--white);}
+  .faq-q h3{font-size:19px;font-weight:500;color:var(--white);}
   .faq-q .plus{width:26px;height:26px;flex-shrink:0;position:relative;}
   .faq-q .plus::before,.faq-q .plus::after{content:'';position:absolute;background:var(--gold);top:50%;left:50%;
     transform:translate(-50%,-50%);transition:transform .4s var(--ease), opacity .4s;}
@@ -476,7 +476,7 @@
     display:flex;align-items:center;justify-content:center;margin:0 auto 24px;position:relative;z-index:2;
     font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:19px;
   }
-  .tl-step h4{font-size:17px;color:var(--white);font-weight:500;margin-bottom:10px;}
+  .tl-step h3{font-size:17px;color:var(--white);font-weight:500;margin-bottom:10px;}
   .tl-step p{font-size:13px;color:var(--text-dim);line-height:1.6;font-weight:300;}
   @media (max-width:900px){
     .tl-track{grid-template-columns:1fr;gap:36px;}
@@ -511,7 +511,7 @@
 <div class="cursor-dot" id="cursorDot"></div>
 
 <div class="preloader" id="preloader">
-  <img src="logo-full.webp" alt="KIOS Event">
+  <img width="480" height="273" src="logo-full.webp" alt="KIOS Event">
   <div class="preloader-bar"><span></span></div>
 </div>
 
@@ -522,7 +522,7 @@
 <!-- ================= NAV ================= -->
 <header id="siteHeader">
   <div class="nav-inner">
-    <a href="#accueil" class="logo-lockup"><img src="logo-header.webp" alt="KIOS Event"></a>
+    <a href="#accueil" class="logo-lockup"><img width="400" height="164" src="logo-header.webp" alt="KIOS Event"></a>
     <nav class="links">
       <a href="#accueil">Accueil</a>
       <a href="#concept">Le Bar</a>
@@ -550,7 +550,7 @@
 <!-- ================= HERO ================= -->
 <section class="hero" id="accueil" style="padding:0;">
   <div class="hero-media">
-    <img src="hero-villa.jpg" alt="Bar KIOS installé devant une villa au coucher du soleil" fetchpriority="high" decoding="async">
+    <img width="1536" height="1536" src="hero-villa.jpg" alt="Bar KIOS installé devant une villa au coucher du soleil" fetchpriority="high" decoding="async">
   </div>
   <div class="hero-glow"></div>
   <div class="container hero-content">
@@ -577,7 +577,7 @@
   <div class="container">
     <div class="feature-grid">
       <div class="feature-media reveal">
-        <img src="bar-detail.jpg" alt="Bar KIOS entièrement équipé, inox et éclairage LED" loading="lazy" decoding="async">
+        <img width="1400" height="1400" src="bar-detail.jpg" alt="Bar KIOS entièrement équipé, inox et éclairage LED" loading="lazy" decoding="async">
       </div>
       <div class="feature-content">
         <span class="eyebrow reveal">02 — Le bar KIOS</span>
@@ -701,11 +701,11 @@
       <h2>Cinq étapes.<br>Aucune contrainte.</h2>
     </div>
     <div class="tl-track reveal">
-      <div class="tl-step"><div class="tl-num">1</div><h4>Vous choisissez votre formule</h4><p>One, One+ ou Signature, selon votre événement.</p></div>
-      <div class="tl-step"><div class="tl-num">2</div><h4>Nous vous contactons</h4><p>Nous affinons les détails de votre réception ensemble.</p></div>
-      <div class="tl-step"><div class="tl-num">3</div><h4>Nous livrons et installons</h4><p>Le bar est prêt avant l'arrivée de vos invités.</p></div>
-      <div class="tl-step"><div class="tl-num">4</div><h4>Vous profitez de votre événement</h4><p>Nous nous occupons de tout, vous savourez l'instant.</p></div>
-      <div class="tl-step"><div class="tl-num">5</div><h4>Nous récupérons le bar</h4><p>Discrètement, une fois la réception terminée.</p></div>
+      <div class="tl-step"><div class="tl-num">1</div><h3>Vous choisissez votre formule</h3><p>One, One+ ou Signature, selon votre événement.</p></div>
+      <div class="tl-step"><div class="tl-num">2</div><h3>Nous vous contactons</h3><p>Nous affinons les détails de votre réception ensemble.</p></div>
+      <div class="tl-step"><div class="tl-num">3</div><h3>Nous livrons et installons</h3><p>Le bar est prêt avant l'arrivée de vos invités.</p></div>
+      <div class="tl-step"><div class="tl-num">4</div><h3>Vous profitez de votre événement</h3><p>Nous nous occupons de tout, vous savourez l'instant.</p></div>
+      <div class="tl-step"><div class="tl-num">5</div><h3>Nous récupérons le bar</h3><p>Discrètement, une fois la réception terminée.</p></div>
     </div>
   </div>
 </section>
@@ -718,11 +718,11 @@
   </div>
   <div class="gwrap reveal">
     <div class="gscroll">
-      <figure onclick="openLightbox('hero-villa.jpg')"><img src="hero-villa.jpg" alt="Bar KIOS devant une villa au coucher du soleil" loading="lazy"><figcaption>Villa</figcaption></figure>
-      <figure onclick="openLightbox('bar-night-moon.jpg')"><img src="bar-night-moon.jpg" alt="Réception nocturne autour du bar KIOS" loading="lazy"><figcaption>Cocktail</figcaption></figure>
-      <figure onclick="openLightbox('bar-detail.jpg')"><img src="bar-detail.jpg" alt="Détail intérieur du bar, bouteilles et verrerie" loading="lazy"><figcaption>Intérieur</figcaption></figure>
-      <figure onclick="openLightbox('bar-day-crowd.jpg')"><img src="bar-day-crowd.jpg" alt="Invités autour du bar KIOS en journée" loading="lazy"><figcaption>Jardin</figcaption></figure>
-      <figure onclick="openLightbox('bar-night-ruins.jpg')"><img src="bar-night-ruins.jpg" alt="Bar KIOS de nuit avec barmen professionnels" loading="lazy"><figcaption>Mariage</figcaption></figure>
+      <figure onclick="openLightbox('hero-villa.jpg')"><img width="1536" height="1536" src="hero-villa.jpg" alt="Bar KIOS devant une villa au coucher du soleil" loading="lazy"><figcaption>Villa</figcaption></figure>
+      <figure onclick="openLightbox('bar-night-moon.jpg')"><img width="1400" height="2488" src="bar-night-moon.jpg" alt="Réception nocturne autour du bar KIOS" loading="lazy"><figcaption>Cocktail</figcaption></figure>
+      <figure onclick="openLightbox('bar-detail.jpg')"><img width="1400" height="1400" src="bar-detail.jpg" alt="Détail intérieur du bar, bouteilles et verrerie" loading="lazy"><figcaption>Intérieur</figcaption></figure>
+      <figure onclick="openLightbox('bar-day-crowd.jpg')"><img width="1400" height="1400" src="bar-day-crowd.jpg" alt="Invités autour du bar KIOS en journée" loading="lazy"><figcaption>Jardin</figcaption></figure>
+      <figure onclick="openLightbox('bar-night-ruins.jpg')"><img width="1400" height="1400" src="bar-night-ruins.jpg" alt="Bar KIOS de nuit avec barmen professionnels" loading="lazy"><figcaption>Mariage</figcaption></figure>
     </div>
     <div class="mid-cta reveal"><a href="#devis" class="btn btn-ghost">Demander un devis</a></div>
   </div>
@@ -740,11 +740,11 @@
     <h2>Ils imaginent déjà<br>leur événement avec KIOS.</h2>
   </div>
   <div class="proj-grid reveal">
-    <div class="proj-card"><img src="bar-day-crowd.jpg" alt="Mariage dans un domaine provençal"><div class="proj-cap"><span class="eyebrow">Mariage</span><h4>Domaine provençal</h4></div></div>
-    <div class="proj-card"><img src="bar-night-moon.jpg" alt="Cocktail au bord de la piscine"><div class="proj-cap"><span class="eyebrow">Cocktail</span><h4>Nuit d'été</h4></div></div>
-    <div class="proj-card"><img src="hero-villa.jpg" alt="Garden-party élégante"><div class="proj-cap"><span class="eyebrow">Garden-party</span><h4>Golden hour</h4></div></div>
-    <div class="proj-card"><img src="bar-night-ruins.jpg" alt="Réception d'entreprise"><div class="proj-cap"><span class="eyebrow">Entreprise</span><h4>Soirée de gala</h4></div></div>
-    <div class="proj-card"><img src="bar-detail.jpg" alt="Soirée dans une villa contemporaine"><div class="proj-cap"><span class="eyebrow">Villa</span><h4>Service sur-mesure</h4></div></div>
+    <div class="proj-card"><img width="1400" height="1400" src="bar-day-crowd.jpg" alt="Mariage dans un domaine provençal"><div class="proj-cap"><span class="eyebrow">Mariage</span><h3>Domaine provençal</h3></div></div>
+    <div class="proj-card"><img width="1400" height="2488" src="bar-night-moon.jpg" alt="Cocktail au bord de la piscine"><div class="proj-cap"><span class="eyebrow">Cocktail</span><h3>Nuit d'été</h3></div></div>
+    <div class="proj-card"><img width="1536" height="1536" src="hero-villa.jpg" alt="Garden-party élégante"><div class="proj-cap"><span class="eyebrow">Garden-party</span><h3>Golden hour</h3></div></div>
+    <div class="proj-card"><img width="1400" height="1400" src="bar-night-ruins.jpg" alt="Réception d'entreprise"><div class="proj-cap"><span class="eyebrow">Entreprise</span><h3>Soirée de gala</h3></div></div>
+    <div class="proj-card"><img width="1400" height="1400" src="bar-detail.jpg" alt="Soirée dans une villa contemporaine"><div class="proj-cap"><span class="eyebrow">Villa</span><h3>Service sur-mesure</h3></div></div>
   </div>
 </section>
 
@@ -757,43 +757,43 @@
     </div>
     <div class="faq-list reveal">
       <div class="faq-item">
-        <div class="faq-q"><h4>Comment fonctionne la location ?</h4><div class="plus"></div></div>
+        <div class="faq-q"><h3>Comment fonctionne la location ?</h3><div class="plus"></div></div>
         <div class="faq-a"><div class="faq-a-inner">Vous choisissez votre formule et votre date. Nous livrons et installons le bar directement sur le lieu de votre événement, puis nous le récupérons une fois la réception terminée.</div></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><h4>Qui installe le bar ?</h4><div class="plus"></div></div>
+        <div class="faq-q"><h3>Qui installe le bar ?</h3><div class="plus"></div></div>
         <div class="faq-a"><div class="faq-a-inner">Notre équipe se charge de la livraison, de l'installation et de la mise en service du bar. Vous n'avez rien à gérer le jour J.</div></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><h4>Peut-on utiliser nos propres boissons ?</h4><div class="plus"></div></div>
+        <div class="faq-q"><h3>Peut-on utiliser nos propres boissons ?</h3><div class="plus"></div></div>
         <div class="faq-a"><div class="faq-a-inner">Oui, avec les formules Kios One et Kios One+, vous êtes libre d'apporter vos propres boissons. La formule Signature inclut un service sur mesure avec notre barman partenaire.</div></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><h4>Le barman est-il obligatoire ?</h4><div class="plus"></div></div>
+        <div class="faq-q"><h3>Le barman est-il obligatoire ?</h3><div class="plus"></div></div>
         <div class="faq-a"><div class="faq-a-inner">Non. Le barman partenaire est inclus uniquement dans la formule Kios Signature. Pour les autres formules, vous organisez le service comme vous le souhaitez.</div></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><h4>Quelle est votre zone d'intervention ?</h4><div class="plus"></div></div>
+        <div class="faq-q"><h3>Quelle est votre zone d'intervention ?</h3><div class="plus"></div></div>
         <div class="faq-a"><div class="faq-a-inner">Nous intervenons dans les Alpes-Maritimes, le Var et à Monaco. La livraison est incluse dans un rayon fixe autour de notre base ; au-delà, un tarif adaptatif est appliqué selon la distance. Précisez l'adresse de votre événement dans le formulaire de devis pour connaître les conditions exactes.</div></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><h4>Combien de temps dure l'installation ?</h4><div class="plus"></div></div>
+        <div class="faq-q"><h3>Combien de temps dure l'installation ?</h3><div class="plus"></div></div>
         <div class="faq-a"><div class="faq-a-inner">L'installation du bar prend en moyenne 30 à 45 minutes. Nous arrivons toujours en amont de votre événement pour garantir une mise en service sereine.</div></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><h4>Combien de personnes peut accueillir le bar ?</h4><div class="plus"></div></div>
+        <div class="faq-q"><h3>Combien de personnes peut accueillir le bar ?</h3><div class="plus"></div></div>
         <div class="faq-a"><div class="faq-a-inner">Le bar KIOS est pensé pour des réceptions de 20 à plus de 150 invités, selon la formule et l'organisation choisies.</div></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><h4>Le bar fonctionne-t-il sans arrivée d'eau ?</h4><div class="plus"></div></div>
+        <div class="faq-q"><h3>Le bar fonctionne-t-il sans arrivée d'eau ?</h3><div class="plus"></div></div>
         <div class="faq-a"><div class="faq-a-inner">Oui. Le bar dispose d'un réservoir d'eau propre ainsi que d'un réservoir d'eau usagée, entièrement intégrés et dissimulés. Aucun raccordement à l'eau n'est nécessaire.</div></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><h4>Faut-il prévoir une alimentation électrique ?</h4><div class="plus"></div></div>
+        <div class="faq-q"><h3>Faut-il prévoir une alimentation électrique ?</h3><div class="plus"></div></div>
         <div class="faq-a"><div class="faq-a-inner">Si une prise électrique est disponible à proximité, elle sera utilisée pour alimenter le bar. En son absence, nous pouvons proposer une batterie autonome, totalement silencieuse et discrète, permettant de faire fonctionner le bar pendant toute la durée de votre événement.</div></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><h4>Où peut-on installer le bar ?</h4><div class="plus"></div></div>
+        <div class="faq-q"><h3>Où peut-on installer le bar ?</h3><div class="plus"></div></div>
         <div class="faq-a"><div class="faq-a-inner">Le bar est entièrement autonome et peut être installé presque partout : jardin, domaine, terrasse, cour, plage privée ou lieu de réception.</div></div>
       </div>
     </div>
@@ -809,18 +809,18 @@
       <p>Décrivez-nous votre projet : nous revenons vers vous avec une proposition adaptée à votre réception, votre lieu et le nombre de vos invités. Réponse sous 24 à 48 heures.</p>
 
       <form id="devisForm" action="https://formspree.io/f/mjybbkpd" method="POST">
-        <div class="field"><label>Nom</label><input type="text" name="nom" required></div>
-        <div class="field"><label>Prénom</label><input type="text" name="prenom" required></div>
-        <div class="field"><label>Téléphone</label><input type="tel" name="telephone" required></div>
-        <div class="field"><label>Email</label><input type="email" name="email" required></div>
-        <div class="field"><label>Date de l'événement</label><input type="date" name="date_evenement"></div>
-        <div class="field"><label>Nombre d'invités</label><input type="number" name="invites" min="1" placeholder="ex : 80"></div>
-        <div class="field full"><label>Adresse de l'événement</label><input type="text" name="adresse" placeholder="Adresse, ville"></div>
+        <div class="field"><label for="f-nom">Nom</label><input id="f-nom" type="text" name="nom" required></div>
+        <div class="field"><label for="f-prenom">Prénom</label><input id="f-prenom" type="text" name="prenom" required></div>
+        <div class="field"><label for="f-tel">Téléphone</label><input id="f-tel" type="tel" name="telephone" required></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" name="email" required></div>
+        <div class="field"><label for="f-date">Date de l'événement</label><input id="f-date" type="date" name="date_evenement"></div>
+        <div class="field"><label for="f-invites">Nombre d'invités</label><input id="f-invites" type="number" name="invites" min="1" placeholder="ex : 80"></div>
+        <div class="field full"><label for="f-adresse">Adresse de l'événement</label><input id="f-adresse" type="text" name="adresse" placeholder="Adresse, ville"></div>
         <p class="form-note" style="margin-top:-10px;">Nous intervenons en Alpes-Maritimes, Var et à Monaco. Livraison incluse dans un rayon fixe ; tarif adaptatif au-delà.</p>
 
         <div class="field full">
-          <label>Type d'événement</label>
-          <div class="radio-group">
+          <label id="f-type-label">Type d'événement</label>
+          <div class="radio-group" role="radiogroup" aria-labelledby="f-type-label">
             <label class="radio-pill active"><input type="radio" name="type_evenement" value="Mariage" checked>Mariage</label>
             <label class="radio-pill"><input type="radio" name="type_evenement" value="Anniversaire">Anniversaire</label>
             <label class="radio-pill"><input type="radio" name="type_evenement" value="Entreprise">Entreprise</label>
@@ -829,8 +829,8 @@
         </div>
 
         <div class="field full">
-          <label>Formule souhaitée</label>
-          <select name="formule">
+          <label for="f-formule">Formule souhaitée</label>
+          <select id="f-formule" name="formule">
             <option>Kios One — 390 €</option>
             <option>Kios One+ — 590 €</option>
             <option>Kios Signature — à partir de 990 €</option>
@@ -838,7 +838,7 @@
           </select>
         </div>
 
-        <div class="field full"><label>Message</label><textarea name="message" placeholder="Parlez-nous de votre projet..."></textarea></div>
+        <div class="field full"><label for="f-message">Message</label><textarea id="f-message" name="message" placeholder="Parlez-nous de votre projet..."></textarea></div>
 
         <div class="field full form-submit"><button type="submit" class="btn btn-gold">Recevoir mon devis</button></div>
         <p class="form-note">Réponse sous 24 à 48 heures. Vos informations restent confidentielles.</p>
@@ -850,7 +850,7 @@
         <p>Votre demande a bien été envoyée. Notre équipe vous répond sous 24 à 48 heures.</p>
       </div>
     </div>
-    <div class="devis-photo reveal reveal-delay-1"><img src="bar-night-ruins.jpg" alt="Bar KIOS de nuit" loading="lazy" decoding="async"></div>
+    <div class="devis-photo reveal reveal-delay-1"><img width="1400" height="1400" src="bar-night-ruins.jpg" alt="Bar KIOS de nuit" loading="lazy" decoding="async"></div>
   </div>
 </section>
 
@@ -890,7 +890,7 @@
 <!-- ================= FOOTER (minimal) ================= -->
 <footer>
   <div class="container footer-inner">
-    <a href="#accueil" class="footer-logo"><img src="logo-header.webp" alt="KIOS Event"></a>
+    <a href="#accueil" class="footer-logo"><img width="400" height="164" src="logo-header.webp" alt="KIOS Event"></a>
     <div class="footer-links">
       <a href="https://www.instagram.com/kios.event?igsh=MXN3OTJqaTFyYW9kbA%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
       <a href="tel:0400000000">04 00 00 00 00</a>
