@@ -74,7 +74,7 @@
     transition:opacity .8s var(--ease-soft);
   }
   .preloader.hide{opacity:0;visibility:hidden;pointer-events:none;}
-  .preloader img{width:150px;opacity:0;animation:pIn .8s var(--ease-soft) forwards;}
+  .preloader img{width:150px;height:auto;aspect-ratio:360/205;object-fit:contain;opacity:0;animation:pIn .8s var(--ease-soft) forwards;}
   .preloader-bar{width:150px;height:1px;background:rgba(201,168,118,0.25);overflow:hidden;}
   .preloader-bar span{display:block;height:100%;width:0%;background:var(--gold);animation:pFill 1.3s .3s var(--ease-soft) forwards;}
   @keyframes pIn{to{opacity:1;}}
