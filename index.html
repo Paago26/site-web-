@@ -71,7 +71,7 @@
   .preloader{
     position:fixed;inset:0;background:var(--black);z-index:10000;
     display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;
-    transition:opacity .8s var(--ease-soft), visibility .8s;
+    transition:opacity .8s var(--ease-soft);
   }
   .preloader.hide{opacity:0;visibility:hidden;pointer-events:none;}
   .preloader img{width:150px;opacity:0;animation:pIn .8s var(--ease-soft) forwards;}
@@ -81,9 +81,9 @@
   @keyframes pFill{to{width:100%;}}
 
   /* ============ reveal ============ */
-  .reveal{opacity:0;transform:translateY(34px) scale(.985);filter:blur(6px);
-    transition:opacity 1.1s var(--ease-soft), transform 1.1s var(--ease-soft), filter 1.1s var(--ease-soft);}
-  .reveal.in{opacity:1;transform:translateY(0) scale(1);filter:blur(0);}
+  .reveal{opacity:0;transform:translateY(34px) scale(.985);
+    transition:opacity 1.1s var(--ease-soft), transform 1.1s var(--ease-soft);}
+  .reveal.in{opacity:1;transform:translateY(0) scale(1);}
   .reveal-delay-1{transition-delay:.12s;}
   .reveal-delay-2{transition-delay:.24s;}
   .reveal-delay-3{transition-delay:.36s;}
@@ -107,7 +107,7 @@
   header{
     position:fixed;top:34px;left:0;right:0;z-index:100;
     padding:30px 0;background:transparent;border-bottom:1px solid transparent;
-    transition:padding .6s var(--ease), background .6s var(--ease), border-color .6s var(--ease), backdrop-filter .6s, top .5s var(--ease);
+    transition:padding .6s var(--ease), background .6s var(--ease), border-color .6s var(--ease), top .5s var(--ease);
   }
   header.scrolled{
     padding:16px 0;background:rgba(10,10,10,0.72);
@@ -173,7 +173,7 @@
     position:absolute;left:50%;bottom:14%;width:60%;height:26%;transform:translateX(-50%);z-index:3;
     background:radial-gradient(ellipse at center, rgba(233,203,140,0.28), transparent 70%);
     opacity:0;animation:glowIn 3s 1.6s var(--ease-soft) forwards, glowPulse 5s 5s ease-in-out infinite;
-    pointer-events:none;filter:blur(6px);
+    pointer-events:none;
   }
   @keyframes glowIn{to{opacity:1;}}
   @keyframes glowPulse{0%,100%{opacity:.7;}50%{opacity:1;}}
@@ -188,9 +188,9 @@
     font-size:clamp(42px,7.6vw,88px);color:var(--white);
   }
   .hero h1 .word{display:inline-block;white-space:nowrap;}
-  .hero h1 .char{display:inline-block;opacity:0;transform:translateY(26px) rotateX(40deg);filter:blur(4px);
-    transition:opacity 1s var(--ease-soft), transform 1s var(--ease-soft), filter 1s var(--ease-soft);}
-  .hero h1 .char.in{opacity:1;transform:translateY(0) rotateX(0);filter:blur(0);}
+  .hero h1 .char{display:inline-block;opacity:0;transform:translateY(26px) rotateX(40deg);
+    transition:opacity 1s var(--ease-soft), transform 1s var(--ease-soft);}
+  .hero h1 .char.in{opacity:1;transform:translateY(0) rotateX(0);}
   .hero h1 em{color:var(--gold);font-style:normal;}
   .hero p.sub{
     margin:26px auto 0;font-size:clamp(15px,1.7vw,18px);color:var(--text-dim);max-width:460px;font-weight:300;
@@ -511,7 +511,7 @@
 <div class="cursor-dot" id="cursorDot"></div>
 
 <div class="preloader" id="preloader">
-  <img width="480" height="273" src="logo-full.webp" alt="KIOS Event">
+  <img width="360" height="205" src="logo-full.png" alt="KIOS Event">
   <div class="preloader-bar"><span></span></div>
 </div>
 
@@ -522,7 +522,7 @@
 <!-- ================= NAV ================= -->
 <header id="siteHeader">
   <div class="nav-inner">
-    <a href="#accueil" class="logo-lockup"><img width="400" height="164" src="logo-header.webp" alt="KIOS Event"></a>
+    <a href="#accueil" class="logo-lockup"><img width="240" height="98" src="logo-header.png" alt="KIOS Event"></a>
     <nav class="links">
       <a href="#accueil">Accueil</a>
       <a href="#concept">Le Bar</a>
@@ -719,7 +719,7 @@
   <div class="gwrap reveal">
     <div class="gscroll">
       <figure onclick="openLightbox('hero-villa.jpg')"><img width="1536" height="1536" src="hero-villa.jpg" alt="Bar KIOS devant une villa au coucher du soleil" loading="lazy"><figcaption>Villa</figcaption></figure>
-      <figure onclick="openLightbox('bar-night-moon.jpg')"><img width="1400" height="2488" src="bar-night-moon.jpg" alt="Réception nocturne autour du bar KIOS" loading="lazy"><figcaption>Cocktail</figcaption></figure>
+      <figure onclick="openLightbox('bar-night-moon.jpg')"><img width="1000" height="1777" src="bar-night-moon.jpg" alt="Réception nocturne autour du bar KIOS" loading="lazy"><figcaption>Cocktail</figcaption></figure>
       <figure onclick="openLightbox('bar-detail.jpg')"><img width="1400" height="1400" src="bar-detail.jpg" alt="Détail intérieur du bar, bouteilles et verrerie" loading="lazy"><figcaption>Intérieur</figcaption></figure>
       <figure onclick="openLightbox('bar-day-crowd.jpg')"><img width="1400" height="1400" src="bar-day-crowd.jpg" alt="Invités autour du bar KIOS en journée" loading="lazy"><figcaption>Jardin</figcaption></figure>
       <figure onclick="openLightbox('bar-night-ruins.jpg')"><img width="1400" height="1400" src="bar-night-ruins.jpg" alt="Bar KIOS de nuit avec barmen professionnels" loading="lazy"><figcaption>Mariage</figcaption></figure>
@@ -730,7 +730,7 @@
 
 <div class="lightbox" id="lightbox">
   <div class="lightbox-close" id="lightboxClose">Fermer ✕</div>
-  <img id="lightboxImg" src="" alt="Vue agrandie">
+  <img id="lightboxImg" width="1400" height="1400" src="" alt="Vue agrandie">
 </div>
 
 <!-- ================= PROJECTION ================= -->
@@ -741,7 +741,7 @@
   </div>
   <div class="proj-grid reveal">
     <div class="proj-card"><img width="1400" height="1400" src="bar-day-crowd.jpg" alt="Mariage dans un domaine provençal"><div class="proj-cap"><span class="eyebrow">Mariage</span><h3>Domaine provençal</h3></div></div>
-    <div class="proj-card"><img width="1400" height="2488" src="bar-night-moon.jpg" alt="Cocktail au bord de la piscine"><div class="proj-cap"><span class="eyebrow">Cocktail</span><h3>Nuit d'été</h3></div></div>
+    <div class="proj-card"><img width="1000" height="1777" src="bar-night-moon.jpg" alt="Cocktail au bord de la piscine"><div class="proj-cap"><span class="eyebrow">Cocktail</span><h3>Nuit d'été</h3></div></div>
     <div class="proj-card"><img width="1536" height="1536" src="hero-villa.jpg" alt="Garden-party élégante"><div class="proj-cap"><span class="eyebrow">Garden-party</span><h3>Golden hour</h3></div></div>
     <div class="proj-card"><img width="1400" height="1400" src="bar-night-ruins.jpg" alt="Réception d'entreprise"><div class="proj-cap"><span class="eyebrow">Entreprise</span><h3>Soirée de gala</h3></div></div>
     <div class="proj-card"><img width="1400" height="1400" src="bar-detail.jpg" alt="Soirée dans une villa contemporaine"><div class="proj-cap"><span class="eyebrow">Villa</span><h3>Service sur-mesure</h3></div></div>
@@ -890,7 +890,7 @@
 <!-- ================= FOOTER (minimal) ================= -->
 <footer>
   <div class="container footer-inner">
-    <a href="#accueil" class="footer-logo"><img width="400" height="164" src="logo-header.webp" alt="KIOS Event"></a>
+    <a href="#accueil" class="footer-logo"><img width="240" height="98" src="logo-header.png" alt="KIOS Event"></a>
     <div class="footer-links">
       <a href="https://www.instagram.com/kios.event?igsh=MXN3OTJqaTFyYW9kbA%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
       <a href="tel:0400000000">04 00 00 00 00</a>
