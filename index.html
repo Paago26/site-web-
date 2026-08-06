@@ -8,9 +8,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<!-- Cloudflare Web Analytics -->
-<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3aee304545f2428e8581241e381ce610"}'></script>
-<!-- End Cloudflare Web Analytics -->
 <style>
   :root{
     --black: #0A0A0A;
@@ -508,11 +505,17 @@
   .mobile-nav .close-mobile{position:absolute;top:26px;right:28px;font-size:13px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);}
 </style>
 <!-- Cloudflare Web Analytics -->
-<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3aee304545f2428e8581241e381ce610"}'></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "3aee304545f2428e8581241e381ce610"}'></script>
 <!-- End Cloudflare Web Analytics -->
-<!-- Cloudflare Web Analytics -->
-<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3aee304545f2428e8581241e381ce610"}'></script>
-<!-- End Cloudflare Web Analytics -->
+<!-- Google Ads Tag -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18373259621"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18373259621');
+</script>
+<!-- End Google Ads Tag -->
 </head>
 <body>
 
@@ -1070,6 +1073,10 @@
       if (response.ok) {
         form.style.display = 'none';
         success.classList.add('show');
+        // Google Ads conversion tracking
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', {'send_to': 'AW-18373259621/REMPLACER_PAR_LE_LIBELLE'});
+        }
       } else {
         alert("Une erreur est survenue lors de l'envoi. Merci de réessayer ou de nous contacter directement par téléphone.");
         submitBtn.textContent = originalLabel;
