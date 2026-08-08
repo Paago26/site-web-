@@ -1088,12 +1088,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         headers: { 'Accept': 'application/json' }
       });
       if (response.ok) {
-        form.style.display = 'none';
-        success.classList.add('show');
-        // Google Ads conversion tracking
-        if (typeof gtag === 'function') {
-          gtag('event', 'conversion', {'send_to': 'AW-18373259621/REMPLACER_PAR_LE_LIBELLE'});
-        }
+        window.location.href = 'merci.html';
       } else {
         alert("Une erreur est survenue lors de l'envoi. Merci de réessayer ou de nous contacter directement par téléphone.");
         submitBtn.textContent = originalLabel;
